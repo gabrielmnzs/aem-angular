@@ -64,7 +64,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"adobe-aem-core-components-angular-base-authoring-teaser-v1":"adobe-aem-core-components-angular-base-authoring-teaser-v1","adobe-aem-core-components-angular-spa-containers-carousel-v1":"adobe-aem-core-components-angular-spa-containers-carousel-v1","text-text-component":"text-text-component"}[chunkId]||chunkId) + "-es2015.js"
+/******/ 		return __webpack_require__.p + "" + ({"adobe-aem-core-components-angular-base-authoring-teaser-v1":"adobe-aem-core-components-angular-base-authoring-teaser-v1","adobe-aem-core-components-angular-spa-containers-carousel-v1":"adobe-aem-core-components-angular-spa-containers-carousel-v1"}[chunkId]||chunkId) + "-es2015.js"
 /******/ 	}
 /******/
 /******/ 	// The require function

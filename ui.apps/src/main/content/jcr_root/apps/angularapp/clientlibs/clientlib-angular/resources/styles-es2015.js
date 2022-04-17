@@ -1,17 +1,18 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["styles"],{
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/styles.css":
-/*!*********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--12-1!./node_modules/postcss-loader/src??embedded!./src/styles.css ***!
-  \*********************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/styles.scss":
+/*!************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--13-1!./node_modules/postcss-loader/src??embedded!./node_modules/sass-loader/dist/cjs.js??ref--13-3!./src/styles.scss ***!
+  \************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap);"]);
 // Module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\r\n\r\nhtml,\r\nbody {\r\n  border: 0;\r\n  font: inherit;\r\n  font-size: 100%;\r\n  margin: 0;\r\n  padding: 0;\r\n  vertical-align: baseline;\r\n}\r\n\r\nbody {\r\n  background-color: #ffffff;\r\n}\r\n\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\np,\r\n.nav-container,\r\n.rw-box {\r\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif !important;\r\n  color: #000000;\r\n}\r\n", "",{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,8EAA8E;;AAE9E;;EAEE,SAAS;EACT,aAAa;EACb,eAAe;EACf,SAAS;EACT,UAAU;EACV,wBAAwB;AAC1B;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;;;;;;;;EAQE,sEAAsE;EACtE,cAAc;AAChB","file":"styles.css","sourcesContent":["/* You can add global styles to this file, and also import other style files */\r\n\r\nhtml,\r\nbody {\r\n  border: 0;\r\n  font: inherit;\r\n  font-size: 100%;\r\n  margin: 0;\r\n  padding: 0;\r\n  vertical-align: baseline;\r\n}\r\n\r\nbody {\r\n  background-color: #ffffff;\r\n}\r\n\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\np,\r\n.nav-container,\r\n.rw-box {\r\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif !important;\r\n  color: #000000;\r\n}\r\n"]}]);
+exports.push([module.i, "\n/* You can add global styles to this file, and also import other style files */\nhtml,\nbody {\n  border: 0;\n  margin: 0;\n  padding: 0;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n}\nbody {\n  background-color: #ffffff;\n}\n* {\n  box-sizing: border-box;\n}\n.cmp-container__header {\n  display: flex;\n  align-items: center;\n  height: 100px;\n}\n.cmp-container__main {\n  margin-top: 130px;\n  margin-bottom: 200px;\n}\n.cmp-container__footer {\n  display: flex;\n  align-items: center;\n}\n.cmp-button {\n  width: 216px;\n  height: 68px;\n  background: #333333;\n  font-family: \"Space Mono\";\n  font-style: normal;\n  font-weight: 700;\n  font-size: 14px;\n  line-height: 21px;\n  letter-spacing: -0.035em;\n  text-transform: uppercase;\n  color: #ffffff;\n  cursor: pointer;\n  transition: filter 0.2s;\n}\n.cmp-button:hover {\n  filter: brightness(0.9);\n}\n@media (max-width: 390px) {\n  .cmp-container__header {\n    height: 60px;\n  }\n\n  .cmp-container__main {\n    margin-top: 64px;\n    margin-bottom: 60px;\n  }\n}\n@media (max-width: 500px) {\n  .cmp-container__main {\n    margin-top: 54px;\n    margin-bottom: 50px;\n  }\n}", "",{"version":3,"sources":["C:\\Users\\gabriel.menezes\\Documents\\AEM\\Projetos\\aem-angular\\ui.frontend/src\\styles.scss","styles.scss"],"names":[],"mappings":";AAAA,8EAAA;AAGA;;EAEE,SAAA;EACA,SAAA;EACA,UAAA;EACA,2DAAA;ACAF;ADGA;EACE,yBAAA;ACAF;ADGA;EACE,sBAAA;ACAF;ADIE;EACE,aAAA;EACA,mBAAA;EACA,aAAA;ACDJ;ADIE;EACE,iBAAA;EACA,oBAAA;ACFJ;ADKE;EACE,aAAA;EACA,mBAAA;ACHJ;ADOA;EACE,YAAA;EACA,YAAA;EACA,mBAAA;EAEA,yBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,iBAAA;EAEA,wBAAA;EACA,yBAAA;EACA,cAAA;EAEA,eAAA;EACA,uBAAA;ACPF;ADSE;EACE,uBAAA;ACPJ;ADWA;EACE;IACE,YAAA;ECRF;;EDWA;IACE,gBAAA;IACA,mBAAA;ECRF;AACF;ADWA;EACE;IACE,gBAAA;IACA,mBAAA;ECTF;AACF","file":"styles.scss","sourcesContent":["/* You can add global styles to this file, and also import other style files */\r\n@import url(\"https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap\");\r\n\r\nhtml,\r\nbody {\r\n  border: 0;\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n}\r\n\r\nbody {\r\n  background-color: #ffffff;\r\n}\r\n\r\n* {\r\n  box-sizing: border-box;\r\n}\r\n\r\n.cmp-container {\r\n  &__header {\r\n    display: flex;\r\n    align-items: center;\r\n    height: 100px;\r\n  }\r\n\r\n  &__main {\r\n    margin-top: 130px;\r\n    margin-bottom: 200px;\r\n  }\r\n\r\n  &__footer {\r\n    display: flex;\r\n    align-items: center;\r\n  }\r\n}\r\n\r\n.cmp-button {\r\n  width: 216px;\r\n  height: 68px;\r\n  background: #333333;\r\n\r\n  font-family: \"Space Mono\";\r\n  font-style: normal;\r\n  font-weight: 700;\r\n  font-size: 14px;\r\n  line-height: 21px;\r\n\r\n  letter-spacing: -0.035em;\r\n  text-transform: uppercase;\r\n  color: #ffffff;\r\n\r\n  cursor: pointer;\r\n  transition: filter 0.2s;\r\n\r\n  &:hover {\r\n    filter: brightness(0.9);\r\n  }\r\n}\r\n\r\n@media (max-width: 390px) {\r\n  .cmp-container__header {\r\n    height: 60px;\r\n  }\r\n\r\n  .cmp-container__main {\r\n    margin-top: 64px;\r\n    margin-bottom: 60px;\r\n  }\r\n}\r\n\r\n@media (max-width: 500px) {\r\n  .cmp-container__main {\r\n    margin-top: 54px;\r\n    margin-bottom: 50px;\r\n  }\r\n}\r\n","/* You can add global styles to this file, and also import other style files */\n@import url(\"https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap\");\nhtml,\nbody {\n  border: 0;\n  margin: 0;\n  padding: 0;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n}\n\nbody {\n  background-color: #ffffff;\n}\n\n* {\n  box-sizing: border-box;\n}\n\n.cmp-container__header {\n  display: flex;\n  align-items: center;\n  height: 100px;\n}\n.cmp-container__main {\n  margin-top: 130px;\n  margin-bottom: 200px;\n}\n.cmp-container__footer {\n  display: flex;\n  align-items: center;\n}\n\n.cmp-button {\n  width: 216px;\n  height: 68px;\n  background: #333333;\n  font-family: \"Space Mono\";\n  font-style: normal;\n  font-weight: 700;\n  font-size: 14px;\n  line-height: 21px;\n  letter-spacing: -0.035em;\n  text-transform: uppercase;\n  color: #ffffff;\n  cursor: pointer;\n  transition: filter 0.2s;\n}\n.cmp-button:hover {\n  filter: brightness(0.9);\n}\n\n@media (max-width: 390px) {\n  .cmp-container__header {\n    height: 60px;\n  }\n\n  .cmp-container__main {\n    margin-top: 64px;\n    margin-bottom: 60px;\n  }\n}\n@media (max-width: 500px) {\n  .cmp-container__main {\n    margin-top: 54px;\n    margin-bottom: 50px;\n  }\n}"]}]);
 // Exports
 module.exports = exports;
 
@@ -403,15 +404,15 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ "./src/styles.css":
-/*!************************!*\
-  !*** ./src/styles.css ***!
-  \************************/
+/***/ "./src/styles.scss":
+/*!*************************!*\
+  !*** ./src/styles.scss ***!
+  \*************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--12-1!../node_modules/postcss-loader/src??embedded!./styles.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/styles.css");
+            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--13-1!../node_modules/postcss-loader/src??embedded!../node_modules/sass-loader/dist/cjs.js??ref--13-3!./styles.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/styles.scss");
 
             content = content.__esModule ? content.default : content;
 
@@ -435,13 +436,13 @@ module.exports = exported;
 /***/ }),
 
 /***/ 3:
-/*!******************************!*\
-  !*** multi ./src/styles.css ***!
-  \******************************/
+/*!*******************************!*\
+  !*** multi ./src/styles.scss ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\gabriel.menezes\Documents\AEM\Projetos\aem-angular\ui.frontend\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\gabriel.menezes\Documents\AEM\Projetos\aem-angular\ui.frontend\src\styles.scss */"./src/styles.scss");
 
 
 /***/ })
