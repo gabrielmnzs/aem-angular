@@ -561,7 +561,7 @@ __webpack_require__.r(__webpack_exports__);
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 const environment = {
-    appRoot: "/content/angularapp/us/en/home.html",
+    appRoot: "/content/angularapp/us/en/404-not-found.html",
     production: false,
     publicUrl: '/etc.clientlibs/angularapp/clientlibs/clientlib-angular/resources',
 };

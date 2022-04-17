@@ -998,7 +998,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
     var environment = {
-      appRoot: "/content/angularapp/us/en/home.html",
+      appRoot: "/content/angularapp/us/en/404-not-found.html",
       production: false,
       publicUrl: '/etc.clientlibs/angularapp/clientlibs/clientlib-angular/resources'
     };
