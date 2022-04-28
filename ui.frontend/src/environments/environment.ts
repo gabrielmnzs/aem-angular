@@ -15,7 +15,7 @@
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 export const environment = {
   appRoot:
-    "/content/angularapp/us/en/404-not-found.html", // tslint:disable-line
+    "/content/angularapp/us/en/login.html", // tslint:disable-line
   production: false,
   publicUrl:
     '/etc.clientlibs/angularapp/clientlibs/clientlib-angular/resources',

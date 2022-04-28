@@ -1,7 +1,9 @@
+import { HttpClientModule } from '@angular/common/http';
 import { SpaAngularEditableComponentsModule } from "@adobe/aem-angular-editable-components";
 import { APP_BASE_HREF } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import "./components/import-components";
@@ -22,11 +24,15 @@ import { AemAngularCoreWcmComponentsListV2 } from "@adobe/aem-core-components-an
 import { AemAngularCoreWcmComponentsSeparatorV1 } from "@adobe/aem-core-components-angular-base/authoring/separator/v1";
 import { AemAngularCoreWcmComponentsAccordionV1 } from "@adobe/aem-core-components-angular-spa/containers/accordion/v1";
 import { AemAngularCoreWcmComponentsLanguageNavigationV1 } from "@adobe/aem-core-components-angular-base/layout/language-navigation/v1";
-import { TextComponent } from './components/text/text.component';
+import { TextComponent } from "./components/text/text.component";
+import { LoginComponent } from "./components/login/login.component";
 
 @NgModule({
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     SpaAngularEditableComponentsModule,
     AppRoutingModule,
     AemAngularCoreWcmComponentsTabsV1,
@@ -42,8 +48,8 @@ import { TextComponent } from './components/text/text.component';
     AemAngularCoreWcmComponentsLanguageNavigationV1,
   ],
   providers: [ModelManagerService, { provide: APP_BASE_HREF, useValue: "/" }],
-  declarations: [AppComponent, PageComponent, TextComponent],
-  entryComponents: [PageComponent, TextComponent],
+  declarations: [AppComponent, PageComponent, TextComponent, LoginComponent],
+  entryComponents: [PageComponent, TextComponent, LoginComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

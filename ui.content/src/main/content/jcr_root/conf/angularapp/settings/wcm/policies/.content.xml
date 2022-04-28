@@ -74,6 +74,65 @@
                             features="-"/>
                     </plugins>
                 </policy_651483963895698>
+                <policy_250958026711200
+                    jcr:lastModified="{Date}2022-04-20T17:26:08.268-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Login"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowUpload="true"
+                    altValueFromDAM="true"
+                    disableLazyLoading="true"
+                    displayPopupTitle="true"
+                    isDecorative="false"
+                    jpegQuality="{Long}0"
+                    titleValueFromDAM="true"
+                    uuidDisabled="true">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <plugins jcr:primaryType="nt:unstructured">
+                        <crop
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <aspectRatios jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    name="Wide Landscape"
+                                    ratio="0.6180"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    name="Landscape"
+                                    ratio="0.8284"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    name="Square"
+                                    ratio="1"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    name="Portrait"
+                                    ratio="1.6180"/>
+                            </aspectRatios>
+                        </crop>
+                        <rotate
+                            jcr:primaryType="nt:unstructured"
+                            features="right"/>
+                        <flip
+                            jcr:primaryType="nt:unstructured"
+                            features="-"/>
+                    </plugins>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Image"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-custom-image"
+                                    cq:styleId="1650477953934"
+                                    cq:styleLabel="Image"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_250958026711200>
             </image>
             <text jcr:primaryType="nt:unstructured">
                 <policy_641562756958017
@@ -303,6 +362,53 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
+                <policy_253982258431600
+                    jcr:lastModified="{Date}2022-04-20T16:53:35.943-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Login"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    backgroundColorEnabled="true"
+                    backgroundImageEnabled="true"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Background Color"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-background__gray"
+                                    cq:styleId="1650481936864"
+                                    cq:styleLabel="Gray"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                        <item1
+                            cq:styleGroupLabel="Custom Container"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-custom-container"
+                                    cq:styleId="1650484350498"
+                                    cq:styleLabel="flex center 100vh"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                    </cq:styleGroups>
+                </policy_253982258431600>
+                <policy_255559423986900
+                    jcr:lastModified="{Date}2022-04-20T16:24:45.541-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Login"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="group:Angular App - Content"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_255559423986900>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -363,13 +469,26 @@
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <spa-default
                         jcr:description="Includes only SPA-Enabled components."
-                        jcr:lastModified="{Date}2022-04-02T19:12:22.426-03:00"
+                        jcr:lastModified="{Date}2022-04-20T15:50:51.156-03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="SPA Content"
                         sling:resourceType="wcm/core/components/policy/policy"
                         components="[/libs/wcm/foundation/components/responsivegrid,group:Angular App - Content]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="Background"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="cmp-background__gray"
+                                        cq:styleId="1650480613511"
+                                        cq:styleLabel="Gray"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
                     </spa-default>
                 </responsivegrid>
             </components>

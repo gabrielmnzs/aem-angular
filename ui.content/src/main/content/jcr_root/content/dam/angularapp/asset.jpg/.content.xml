@@ -5,14 +5,14 @@
     jcr:uuid="db41cf41-4bee-476c-b8c8-04f0d44bb92d">
     <jcr:content
         dam:assetState="processed"
-        jcr:lastModified="{Date}2022-04-02T19:09:16.911-03:00"
+        jcr:lastModified="{Date}2022-04-19T17:22:50.283-03:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
             dam:Bitsperpixel="{Long}24"
             dam:ColorSpace="{Long}-1"
             dam:ExifOffset="{Long}232"
-            dam:extracted="{Date}2022-04-02T19:09:16.650-03:00"
+            dam:extracted="{Date}2022-04-19T17:22:49.486-03:00"
             dam:Fileformat="JPEG"
             dam:JpgFromRawLength="{Long}988"
             dam:JpgFromRawStart="{Long}382"
@@ -36,6 +36,8 @@
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"
             photoshop:ColorMode="{Long}3"
+            tiff:BitsPerSample="{Long}[8,8,8]"
+            tiff:BitsPerSample_xmpArrayType="rdf:Seq"
             tiff:Compression="{Long}6"
             tiff:ImageLength="{Long}51"
             tiff:ImageWidth="{Long}940"

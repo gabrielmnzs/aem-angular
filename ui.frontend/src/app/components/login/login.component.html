@@ -1,0 +1,34 @@
+<h1 class="title">{{ title }}</h1>
+<p class="subtitle">{{ subtitle }}</p>
+<form class="form-signin" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <h2 class="form-signin__heading">{{ formTitle }}</h2>
+  <input
+    class="form-control form-signin__input"
+    type="text"
+    formControlName="username"
+    [placeholder]="userPlaceholder"
+    [ngClass]="{ invalid: submitted && username.errors }"
+    required
+    autofocus
+  />
+  <input
+    class="form-control form-signin__input"
+    type="password"
+    formControlName="password"
+    [placeholder]="passwordPlaceholder"
+    [ngClass]="{ invalid: submitted && password.errors }"
+    required
+  />
+  <div class="form-signin__error-message">
+    <p
+      *ngIf="
+        invalidCredentials ||
+        (submitted && (username.errors || password.errors))
+      "
+    >
+      Ops, usuário ou senha inválidos.<br />
+      Tente novamente!
+    </p>
+  </div>
+  <button class="form-signin__button">{{ buttonName }}</button>
+</form>

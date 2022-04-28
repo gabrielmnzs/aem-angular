@@ -1,0 +1,73 @@
+{
+    "project-settings": {
+        "code-owner": "Angular App",
+        "bundle-path": "../core/src/main/java",
+        "test-path": "../core/src/test/java",
+        "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+        "component-path": "angularapp",
+        "model-interface-pkg": "com.angularapp.core.models",
+        "model-impl-pkg": "com.angularapp.core.models.impl"
+    },
+    "name": "login",
+    "title": "Login Component",
+    "group": "Angular App - Content",
+    "type": "components",
+    "options": {
+        "js": false,
+        "jstxt": false,
+        "css": false,
+        "csstxt": false,
+        "html": false,
+        "html-content": false,
+        "slingmodel": true,
+        "testclass": false,
+        "junit-major-version": 5,
+        "content-exporter": true,
+        "model-adaptables": ["request"],
+        "generic-javadoc": false,
+        "properties": [
+            {
+                "field": "title",
+                "label": "Title",
+                "type": "textfield",
+                "json-expose": true,
+                "json-property": "title"
+            },
+            {
+                "field": "subtitle",
+                "label": "Subtitle",
+                "type": "textfield",
+                "json-expose": true,
+                "json-property": "subtitle"
+            },
+            {
+                "field": "formTitle",
+                "label": "Form Title",
+                "type": "textfield",
+                "json-expose": true,
+                "json-property": "formTitle"
+            },
+            {
+                "field": "userPlaceholder",
+                "label": "User Placeholder",
+                "type": "textfield",
+                "json-expose": true,
+                "json-property": "userPlaceholder"
+            },
+            {
+                "field": "passwordPlaceholder",
+                "label": "Password Placeholder",
+                "type": "textfield",
+                "json-expose": true,
+                "json-property": "passwordPlaceholder"
+            },
+            {
+                "field": "buttonName",
+                "label": "Button Name",
+                "type": "textfield",
+                "json-expose": true,
+                "json-property": "buttonName"
+            }
+        ]
+    }
+}
