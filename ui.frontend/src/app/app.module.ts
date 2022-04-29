@@ -26,6 +26,7 @@ import { AemAngularCoreWcmComponentsAccordionV1 } from "@adobe/aem-core-componen
 import { AemAngularCoreWcmComponentsLanguageNavigationV1 } from "@adobe/aem-core-components-angular-base/layout/language-navigation/v1";
 import { TextComponent } from "./components/text/text.component";
 import { LoginComponent } from "./components/login/login.component";
+import { ClockComponent } from './components/clock/clock.component';
 
 @NgModule({
   imports: [
@@ -48,8 +49,8 @@ import { LoginComponent } from "./components/login/login.component";
     AemAngularCoreWcmComponentsLanguageNavigationV1,
   ],
   providers: [ModelManagerService, { provide: APP_BASE_HREF, useValue: "/" }],
-  declarations: [AppComponent, PageComponent, TextComponent, LoginComponent],
-  entryComponents: [PageComponent, TextComponent, LoginComponent],
+  declarations: [AppComponent, PageComponent, TextComponent, LoginComponent, ClockComponent],
+  entryComponents: [PageComponent, TextComponent, LoginComponent, ClockComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

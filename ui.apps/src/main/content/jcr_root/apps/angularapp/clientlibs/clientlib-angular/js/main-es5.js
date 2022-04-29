@@ -56,6 +56,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/components/clock/clock.component.html":
+  /*!*********************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/clock/clock.component.html ***!
+    \*********************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppComponentsClockClockComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"clock-container\">\n    <p class=\"hour\">11:26</p>\n    <p class=\"date\">terça-feira, 17 de março de 2020</p>\n</div>\n";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/components/login/login.component.html":
   /*!*********************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/login/login.component.html ***!
@@ -71,7 +91,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<h1 class=\"title\">{{ title }}</h1>\n<p class=\"subtitle\">{{ subtitle }}</p>\n<form class=\"form-signin\" [formGroup]=\"loginForm\" (ngSubmit)=\"onSubmit()\">\n  <h2 class=\"form-signin__heading\">{{ formTitle }}</h2>\n  <input\n    class=\"form-control form-signin__input\"\n    type=\"text\"\n    formControlName=\"username\"\n    [placeholder]=\"userPlaceholder\"\n    [ngClass]=\"{ invalid: submitted && username.errors }\"\n    required\n    autofocus\n  />\n  <input\n    class=\"form-control form-signin__input\"\n    type=\"password\"\n    formControlName=\"password\"\n    [placeholder]=\"passwordPlaceholder\"\n    [ngClass]=\"{ invalid: submitted && password.errors }\"\n    required\n  />\n  <div class=\"form-signin__error-message\">\n    <p\n      *ngIf=\"\n        invalidCredentials ||\n        (submitted && (username.errors || password.errors))\n      \"\n    >\n      Ops, usuário ou senha inválidos.<br />\n      Tente novamente!\n    </p>\n  </div>\n  <button class=\"form-signin__button\">{{ buttonName }}</button>\n</form>\n";
+    __webpack_exports__["default"] = "<h1 class=\"title\">{{ title }}</h1>\r\n<p class=\"subtitle\">{{ subtitle }}</p>\r\n<form class=\"form-signin\" [formGroup]=\"loginForm\" (ngSubmit)=\"onSubmit()\">\r\n  <h2 class=\"form-signin__heading\">{{ formTitle }}</h2>\r\n  <input\r\n    class=\"form-control form-signin__input\"\r\n    type=\"text\"\r\n    formControlName=\"username\"\r\n    [placeholder]=\"userPlaceholder\"\r\n    [ngClass]=\"{ invalid: submitted && username.errors }\"\r\n    required\r\n    autofocus\r\n  />\r\n  <input\r\n    class=\"form-control form-signin__input\"\r\n    type=\"password\"\r\n    formControlName=\"password\"\r\n    [placeholder]=\"passwordPlaceholder\"\r\n    [ngClass]=\"{ invalid: submitted && password.errors }\"\r\n    required\r\n  />\r\n  <div class=\"form-signin__error-message\">\r\n    <p\r\n      *ngIf=\"\r\n        invalidCredentials ||\r\n        (submitted && (username.errors || password.errors))\r\n      \"\r\n    >\r\n      Ops, usuário ou senha inválidos.<br />\r\n      Tente novamente!\r\n    </p>\r\n  </div>\r\n  <button class=\"form-signin__button\">{{ buttonName }}</button>\r\n</form>\r\n";
     /***/
   },
 
@@ -468,6 +488,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _components_login_login_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
     /*! ./components/login/login.component */
     "./src/app/components/login/login.component.ts");
+    /* harmony import */
+
+
+    var _components_clock_clock_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
+    /*! ./components/clock/clock.component */
+    "./src/app/components/clock/clock.component.ts");
 
     var AppModule = /*#__PURE__*/_createClass(function AppModule() {
       _classCallCheck(this, AppModule);
@@ -479,8 +505,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         provide: _angular_common__WEBPACK_IMPORTED_MODULE_3__["APP_BASE_HREF"],
         useValue: "/"
       }],
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _components_page_page_component__WEBPACK_IMPORTED_MODULE_11__["PageComponent"], _components_text_text_component__WEBPACK_IMPORTED_MODULE_23__["TextComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_24__["LoginComponent"]],
-      entryComponents: [_components_page_page_component__WEBPACK_IMPORTED_MODULE_11__["PageComponent"], _components_text_text_component__WEBPACK_IMPORTED_MODULE_23__["TextComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_24__["LoginComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _components_page_page_component__WEBPACK_IMPORTED_MODULE_11__["PageComponent"], _components_text_text_component__WEBPACK_IMPORTED_MODULE_23__["TextComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_24__["LoginComponent"], _components_clock_clock_component__WEBPACK_IMPORTED_MODULE_25__["ClockComponent"]],
+      entryComponents: [_components_page_page_component__WEBPACK_IMPORTED_MODULE_11__["PageComponent"], _components_text_text_component__WEBPACK_IMPORTED_MODULE_23__["TextComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_24__["LoginComponent"], _components_clock_clock_component__WEBPACK_IMPORTED_MODULE_25__["ClockComponent"]],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
     })], AppModule);
     /***/
@@ -640,6 +666,90 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     LocalStorageService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
       providedIn: 'root'
     })], LocalStorageService);
+    /***/
+  },
+
+  /***/
+  "./src/app/components/clock/clock.component.scss":
+  /*!*******************************************************!*\
+    !*** ./src/app/components/clock/clock.component.scss ***!
+    \*******************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppComponentsClockClockComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY2xvY2svY2xvY2suY29tcG9uZW50LnNjc3MifQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/components/clock/clock.component.ts":
+  /*!*****************************************************!*\
+    !*** ./src/app/components/clock/clock.component.ts ***!
+    \*****************************************************/
+
+  /*! exports provided: ClockComponent */
+
+  /***/
+  function srcAppComponentsClockClockComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ClockComponent", function () {
+      return ClockComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @adobe/aem-angular-editable-components */
+    "./node_modules/@adobe/aem-angular-editable-components/__ivy_ngcc__/fesm2015/adobe-aem-angular-editable-components.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+    var ClockComponent = /*#__PURE__*/function () {
+      function ClockComponent() {
+        _classCallCheck(this, ClockComponent);
+      }
+
+      _createClass(ClockComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return ClockComponent;
+    }();
+
+    ClockComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+      selector: "app-clock",
+      template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
+      /*! raw-loader!./clock.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/components/clock/clock.component.html"))["default"],
+      styles: [Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
+      /*! ./clock.component.scss */
+      "./src/app/components/clock/clock.component.scss"))["default"]]
+    })], ClockComponent);
+    Object(_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["MapTo"])("angularapp/components/clock")(ClockComponent);
     /***/
   },
 
