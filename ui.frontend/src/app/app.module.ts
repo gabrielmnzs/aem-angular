@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from "@angular/common/http";
 import { SpaAngularEditableComponentsModule } from "@adobe/aem-angular-editable-components";
 import { APP_BASE_HREF } from "@angular/common";
 import { NgModule } from "@angular/core";
@@ -26,7 +26,8 @@ import { AemAngularCoreWcmComponentsAccordionV1 } from "@adobe/aem-core-componen
 import { AemAngularCoreWcmComponentsLanguageNavigationV1 } from "@adobe/aem-core-components-angular-base/layout/language-navigation/v1";
 import { TextComponent } from "./components/text/text.component";
 import { LoginComponent } from "./components/login/login.component";
-import { ClockComponent } from './components/clock/clock.component';
+import { ClockComponent } from "./components/clock/clock.component";
+import { WeatherComponent } from "./components/weather/weather.component";
 
 @NgModule({
   imports: [
@@ -49,8 +50,21 @@ import { ClockComponent } from './components/clock/clock.component';
     AemAngularCoreWcmComponentsLanguageNavigationV1,
   ],
   providers: [ModelManagerService, { provide: APP_BASE_HREF, useValue: "/" }],
-  declarations: [AppComponent, PageComponent, TextComponent, LoginComponent, ClockComponent],
-  entryComponents: [PageComponent, TextComponent, LoginComponent, ClockComponent],
+  declarations: [
+    AppComponent,
+    PageComponent,
+    TextComponent,
+    LoginComponent,
+    ClockComponent,
+    WeatherComponent,
+  ],
+  entryComponents: [
+    PageComponent,
+    TextComponent,
+    LoginComponent,
+    ClockComponent,
+    WeatherComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

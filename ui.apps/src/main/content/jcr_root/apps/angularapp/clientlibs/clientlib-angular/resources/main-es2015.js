@@ -88,6 +88,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/weather/weather.component.html":
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/weather/weather.component.html ***!
+  \*************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"weather-container\">\n  <p class=\"local\">Passo Fundo - RS</p>\n  <p class=\"temperature\">22</p>\n</div>\n");
+
+/***/ }),
+
 /***/ "./src/app/app-routing.module.ts":
 /*!***************************************!*\
   !*** ./src/app/app-routing.module.ts ***!
@@ -238,6 +251,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_text_text_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/text/text.component */ "./src/app/components/text/text.component.ts");
 /* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/login/login.component */ "./src/app/components/login/login.component.ts");
 /* harmony import */ var _components_clock_clock_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/clock/clock.component */ "./src/app/components/clock/clock.component.ts");
+/* harmony import */ var _components_weather_weather_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/weather/weather.component */ "./src/app/components/weather/weather.component.ts");
+
 
 
 
@@ -288,8 +303,21 @@ AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             _adobe_aem_core_components_angular_base_layout_language_navigation_v1__WEBPACK_IMPORTED_MODULE_22__["AemAngularCoreWcmComponentsLanguageNavigationV1"],
         ],
         providers: [_components_model_manager_service__WEBPACK_IMPORTED_MODULE_10__["ModelManagerService"], { provide: _angular_common__WEBPACK_IMPORTED_MODULE_3__["APP_BASE_HREF"], useValue: "/" }],
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _components_page_page_component__WEBPACK_IMPORTED_MODULE_11__["PageComponent"], _components_text_text_component__WEBPACK_IMPORTED_MODULE_23__["TextComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_24__["LoginComponent"], _components_clock_clock_component__WEBPACK_IMPORTED_MODULE_25__["ClockComponent"]],
-        entryComponents: [_components_page_page_component__WEBPACK_IMPORTED_MODULE_11__["PageComponent"], _components_text_text_component__WEBPACK_IMPORTED_MODULE_23__["TextComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_24__["LoginComponent"], _components_clock_clock_component__WEBPACK_IMPORTED_MODULE_25__["ClockComponent"]],
+        declarations: [
+            _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
+            _components_page_page_component__WEBPACK_IMPORTED_MODULE_11__["PageComponent"],
+            _components_text_text_component__WEBPACK_IMPORTED_MODULE_23__["TextComponent"],
+            _components_login_login_component__WEBPACK_IMPORTED_MODULE_24__["LoginComponent"],
+            _components_clock_clock_component__WEBPACK_IMPORTED_MODULE_25__["ClockComponent"],
+            _components_weather_weather_component__WEBPACK_IMPORTED_MODULE_26__["WeatherComponent"],
+        ],
+        entryComponents: [
+            _components_page_page_component__WEBPACK_IMPORTED_MODULE_11__["PageComponent"],
+            _components_text_text_component__WEBPACK_IMPORTED_MODULE_23__["TextComponent"],
+            _components_login_login_component__WEBPACK_IMPORTED_MODULE_24__["LoginComponent"],
+            _components_clock_clock_component__WEBPACK_IMPORTED_MODULE_25__["ClockComponent"],
+            _components_weather_weather_component__WEBPACK_IMPORTED_MODULE_26__["WeatherComponent"],
+        ],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]],
     })
 ], AppModule);
@@ -829,6 +857,52 @@ TextComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     })
 ], TextComponent);
 
+
+
+/***/ }),
+
+/***/ "./src/app/components/weather/weather.component.scss":
+/*!***********************************************************!*\
+  !*** ./src/app/components/weather/weather.component.scss ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvd2VhdGhlci93ZWF0aGVyLmNvbXBvbmVudC5zY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/components/weather/weather.component.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/components/weather/weather.component.ts ***!
+  \*********************************************************/
+/*! exports provided: WeatherComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WeatherComponent", function() { return WeatherComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @adobe/aem-angular-editable-components */ "./node_modules/@adobe/aem-angular-editable-components/__ivy_ngcc__/fesm2015/adobe-aem-angular-editable-components.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+
+
+let WeatherComponent = class WeatherComponent {
+    constructor() { }
+    ngOnInit() { }
+};
+WeatherComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+        selector: "app-weather",
+        template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(/*! raw-loader!./weather.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/weather/weather.component.html")).default,
+        styles: [Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(/*! ./weather.component.scss */ "./src/app/components/weather/weather.component.scss")).default]
+    })
+], WeatherComponent);
+
+Object(_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["MapTo"])("angularapp/components/weather")(WeatherComponent);
 
 
 /***/ }),
