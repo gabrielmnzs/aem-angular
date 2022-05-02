@@ -63,9 +63,24 @@ body {
   }
 }
 
+.cmp-custom-header {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
 .cmp-custom-image {
   > div > img {
     background-size: cover;
+  }
+}
+
+.cmp-custom-image__logo {
+  display: flex;
+  justify-content: center;
+
+  > div > img {
+    width: 200px;
   }
 }
 

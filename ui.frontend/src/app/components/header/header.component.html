@@ -1,0 +1,7 @@
+<header class="header-container">
+  <ng-container *ngIf="hasImage">
+    <img [src]="imagePath"/>
+  </ng-container>
+  <app-clock></app-clock>
+  <app-weather></app-weather>
+</header>

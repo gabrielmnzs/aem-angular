@@ -75,7 +75,7 @@
                     </plugins>
                 </policy_651483963895698>
                 <policy_250958026711200
-                    jcr:lastModified="{Date}2022-04-20T17:26:08.268-03:00"
+                    jcr:lastModified="{Date}2022-04-29T16:44:12.249-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Login"
@@ -128,6 +128,11 @@
                                     cq:styleClasses="cmp-custom-image"
                                     cq:styleId="1650477953934"
                                     cq:styleLabel="Image"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-custom-image__logo"
+                                    cq:styleId="1651261437800"
+                                    cq:styleLabel="Logo"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
@@ -363,7 +368,7 @@
                     </cq:authoring>
                 </policy_1575040440977>
                 <policy_253982258431600
-                    jcr:lastModified="{Date}2022-04-20T16:53:35.943-03:00"
+                    jcr:lastModified="{Date}2022-04-29T17:16:42.597-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Login"
@@ -397,6 +402,18 @@
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item1>
+                        <item2
+                            cq:styleGroupLabel="Sections"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-custom-header"
+                                    cq:styleId="1651263384264"
+                                    cq:styleLabel="Header"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item2>
                     </cq:styleGroups>
                 </policy_253982258431600>
                 <policy_255559423986900

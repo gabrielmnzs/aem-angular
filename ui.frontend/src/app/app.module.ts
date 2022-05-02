@@ -28,6 +28,7 @@ import { TextComponent } from "./components/text/text.component";
 import { LoginComponent } from "./components/login/login.component";
 import { ClockComponent } from "./components/clock/clock.component";
 import { WeatherComponent } from "./components/weather/weather.component";
+import { HeaderComponent } from "./components/header/header.component";
 
 @NgModule({
   imports: [
@@ -57,6 +58,7 @@ import { WeatherComponent } from "./components/weather/weather.component";
     LoginComponent,
     ClockComponent,
     WeatherComponent,
+    HeaderComponent,
   ],
   entryComponents: [
     PageComponent,
@@ -64,6 +66,7 @@ import { WeatherComponent } from "./components/weather/weather.component";
     LoginComponent,
     ClockComponent,
     WeatherComponent,
+    HeaderComponent,
   ],
   bootstrap: [AppComponent],
 })
