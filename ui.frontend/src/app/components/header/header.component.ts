@@ -7,13 +7,9 @@ import { Component, Input, OnInit } from "@angular/core";
   styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent implements OnInit {
-  @Input() imagePath: string;
+  @Input() image: HTMLImageElement;
 
   constructor() {}
-
-  get hasImage() {
-    return this.imagePath && this.imagePath.trim().length > 0;
-}
 
   ngOnInit(): void {}
 }

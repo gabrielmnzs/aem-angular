@@ -45,7 +45,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"clock-container\">\n    <p class=\"hour\">11:26</p>\n    <p class=\"date\">terça-feira, 17 de março de 2020</p>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"clock-container\">\n  <p class=\"hour\">{{ date | date: \"shortTime\" }}</p>\n  <p class=\"date\">{{ date | date: \"fullDate\" }}</p>\n</div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/footer/footer.component.html":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/footer/footer.component.html ***!
+  \***********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<p>footer works!</p>\n");
 
 /***/ }),
 
@@ -58,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<header class=\"header-container\">\n  <ng-container *ngIf=\"hasImage\">\n    <img [src]=\"imagePath\"/>\n  </ng-container>\n  <app-clock></app-clock>\n  <app-weather></app-weather>\n</header>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<header class=\"header-container\">\n  <ng-container>\n    <img [src]=\"image.src\" />  \n  </ng-container>\n  <app-clock></app-clock>\n  <app-weather></app-weather>\n</header>\n");
 
 /***/ }),
 
@@ -266,6 +279,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_clock_clock_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/clock/clock.component */ "./src/app/components/clock/clock.component.ts");
 /* harmony import */ var _components_weather_weather_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/weather/weather.component */ "./src/app/components/weather/weather.component.ts");
 /* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/header/header.component */ "./src/app/components/header/header.component.ts");
+/* harmony import */ var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/footer/footer.component */ "./src/app/components/footer/footer.component.ts");
+/* harmony import */ var _angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @angular/common/locales/pt */ "./node_modules/@angular/common/locales/pt.js");
+/* harmony import */ var _angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(_angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_29__);
 
 
 
@@ -294,6 +310,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+Object(_angular_common__WEBPACK_IMPORTED_MODULE_3__["registerLocaleData"])(_angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_29___default.a);
 let AppModule = class AppModule {
 };
 AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
@@ -317,7 +337,11 @@ AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             _adobe_aem_core_components_angular_base_authoring_separator_v1__WEBPACK_IMPORTED_MODULE_20__["AemAngularCoreWcmComponentsSeparatorV1"],
             _adobe_aem_core_components_angular_base_layout_language_navigation_v1__WEBPACK_IMPORTED_MODULE_22__["AemAngularCoreWcmComponentsLanguageNavigationV1"],
         ],
-        providers: [_components_model_manager_service__WEBPACK_IMPORTED_MODULE_10__["ModelManagerService"], { provide: _angular_common__WEBPACK_IMPORTED_MODULE_3__["APP_BASE_HREF"], useValue: "/" }],
+        providers: [
+            _components_model_manager_service__WEBPACK_IMPORTED_MODULE_10__["ModelManagerService"],
+            { provide: _angular_common__WEBPACK_IMPORTED_MODULE_3__["APP_BASE_HREF"], useValue: "/" },
+            { provide: _angular_core__WEBPACK_IMPORTED_MODULE_4__["LOCALE_ID"], useValue: 'pt-br' },
+        ],
         declarations: [
             _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
             _components_page_page_component__WEBPACK_IMPORTED_MODULE_11__["PageComponent"],
@@ -326,6 +350,7 @@ AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             _components_clock_clock_component__WEBPACK_IMPORTED_MODULE_25__["ClockComponent"],
             _components_weather_weather_component__WEBPACK_IMPORTED_MODULE_26__["WeatherComponent"],
             _components_header_header_component__WEBPACK_IMPORTED_MODULE_27__["HeaderComponent"],
+            _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_28__["FooterComponent"],
         ],
         entryComponents: [
             _components_page_page_component__WEBPACK_IMPORTED_MODULE_11__["PageComponent"],
@@ -334,6 +359,7 @@ AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             _components_clock_clock_component__WEBPACK_IMPORTED_MODULE_25__["ClockComponent"],
             _components_weather_weather_component__WEBPACK_IMPORTED_MODULE_26__["WeatherComponent"],
             _components_header_header_component__WEBPACK_IMPORTED_MODULE_27__["HeaderComponent"],
+            _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_28__["FooterComponent"]
         ],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]],
     })
@@ -462,7 +488,9 @@ __webpack_require__.r(__webpack_exports__);
 
 let ClockComponent = class ClockComponent {
     constructor() { }
-    ngOnInit() { }
+    ngOnInit() {
+        this.date = new Date();
+    }
 };
 ClockComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
@@ -489,6 +517,53 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @adobe/aem-angular-editable-components */ "./node_modules/@adobe/aem-angular-editable-components/__ivy_ngcc__/fesm2015/adobe-aem-angular-editable-components.js");
 
 Object(_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_0__["MapTo"])("angularapp/components/spa")(_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_0__["AEMContainerComponent"]);
+
+
+/***/ }),
+
+/***/ "./src/app/components/footer/footer.component.scss":
+/*!*********************************************************!*\
+  !*** ./src/app/components/footer/footer.component.scss ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuc2NzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/components/footer/footer.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/components/footer/footer.component.ts ***!
+  \*******************************************************/
+/*! exports provided: FooterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @adobe/aem-angular-editable-components */ "./node_modules/@adobe/aem-angular-editable-components/__ivy_ngcc__/fesm2015/adobe-aem-angular-editable-components.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+
+
+let FooterComponent = class FooterComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+FooterComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+        selector: 'app-footer',
+        template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(/*! raw-loader!./footer.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/footer/footer.component.html")).default,
+        styles: [Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(/*! ./footer.component.scss */ "./src/app/components/footer/footer.component.scss")).default]
+    })
+], FooterComponent);
+
+Object(_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["MapTo"])("angularapp/components/footer")(FooterComponent);
 
 
 /***/ }),
@@ -524,14 +599,11 @@ __webpack_require__.r(__webpack_exports__);
 
 let HeaderComponent = class HeaderComponent {
     constructor() { }
-    get hasImage() {
-        return this.imagePath && this.imagePath.trim().length > 0;
-    }
     ngOnInit() { }
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"])()
-], HeaderComponent.prototype, "imagePath", void 0);
+], HeaderComponent.prototype, "image", void 0);
 HeaderComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
         selector: "app-header",

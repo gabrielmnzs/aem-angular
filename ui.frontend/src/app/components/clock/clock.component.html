@@ -1,4 +1,4 @@
 <div class="clock-container">
-    <p class="hour">11:26</p>
-    <p class="date">terça-feira, 17 de março de 2020</p>
+  <p class="hour">{{ date | date: "shortTime" }}</p>
+  <p class="date">{{ date | date: "fullDate" }}</p>
 </div>

@@ -7,8 +7,12 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./clock.component.scss"],
 })
 export class ClockComponent implements OnInit {
+  date: Date;
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.date = new Date();
+  }
 }
 MapTo("angularapp/components/clock")(ClockComponent);

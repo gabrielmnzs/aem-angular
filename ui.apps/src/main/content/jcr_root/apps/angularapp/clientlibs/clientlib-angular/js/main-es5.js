@@ -71,7 +71,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"clock-container\">\n    <p class=\"hour\">11:26</p>\n    <p class=\"date\">terça-feira, 17 de março de 2020</p>\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"clock-container\">\n  <p class=\"hour\">{{ date | date: \"shortTime\" }}</p>\n  <p class=\"date\">{{ date | date: \"fullDate\" }}</p>\n</div>\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/components/footer/footer.component.html":
+  /*!***********************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/footer/footer.component.html ***!
+    \***********************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppComponentsFooterFooterComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<p>footer works!</p>\n";
     /***/
   },
 
@@ -91,7 +111,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<header class=\"header-container\">\n  <ng-container *ngIf=\"hasImage\">\n    <img [src]=\"imagePath\"/>\n  </ng-container>\n  <app-clock></app-clock>\n  <app-weather></app-weather>\n</header>\n";
+    __webpack_exports__["default"] = "<header class=\"header-container\">\n  <ng-container>\n    <img [src]=\"image.src\" />  \n  </ng-container>\n  <app-clock></app-clock>\n  <app-weather></app-weather>\n</header>\n";
     /***/
   },
 
@@ -546,6 +566,24 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _components_header_header_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
     /*! ./components/header/header.component */
     "./src/app/components/header/header.component.ts");
+    /* harmony import */
+
+
+    var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
+    /*! ./components/footer/footer.component */
+    "./src/app/components/footer/footer.component.ts");
+    /* harmony import */
+
+
+    var _angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
+    /*! @angular/common/locales/pt */
+    "./node_modules/@angular/common/locales/pt.js");
+    /* harmony import */
+
+
+    var _angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(_angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_29__);
+
+    Object(_angular_common__WEBPACK_IMPORTED_MODULE_3__["registerLocaleData"])(_angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_29___default.a);
 
     var AppModule = /*#__PURE__*/_createClass(function AppModule() {
       _classCallCheck(this, AppModule);
@@ -556,9 +594,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       providers: [_components_model_manager_service__WEBPACK_IMPORTED_MODULE_10__["ModelManagerService"], {
         provide: _angular_common__WEBPACK_IMPORTED_MODULE_3__["APP_BASE_HREF"],
         useValue: "/"
+      }, {
+        provide: _angular_core__WEBPACK_IMPORTED_MODULE_4__["LOCALE_ID"],
+        useValue: 'pt-br'
       }],
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _components_page_page_component__WEBPACK_IMPORTED_MODULE_11__["PageComponent"], _components_text_text_component__WEBPACK_IMPORTED_MODULE_23__["TextComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_24__["LoginComponent"], _components_clock_clock_component__WEBPACK_IMPORTED_MODULE_25__["ClockComponent"], _components_weather_weather_component__WEBPACK_IMPORTED_MODULE_26__["WeatherComponent"], _components_header_header_component__WEBPACK_IMPORTED_MODULE_27__["HeaderComponent"]],
-      entryComponents: [_components_page_page_component__WEBPACK_IMPORTED_MODULE_11__["PageComponent"], _components_text_text_component__WEBPACK_IMPORTED_MODULE_23__["TextComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_24__["LoginComponent"], _components_clock_clock_component__WEBPACK_IMPORTED_MODULE_25__["ClockComponent"], _components_weather_weather_component__WEBPACK_IMPORTED_MODULE_26__["WeatherComponent"], _components_header_header_component__WEBPACK_IMPORTED_MODULE_27__["HeaderComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _components_page_page_component__WEBPACK_IMPORTED_MODULE_11__["PageComponent"], _components_text_text_component__WEBPACK_IMPORTED_MODULE_23__["TextComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_24__["LoginComponent"], _components_clock_clock_component__WEBPACK_IMPORTED_MODULE_25__["ClockComponent"], _components_weather_weather_component__WEBPACK_IMPORTED_MODULE_26__["WeatherComponent"], _components_header_header_component__WEBPACK_IMPORTED_MODULE_27__["HeaderComponent"], _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_28__["FooterComponent"]],
+      entryComponents: [_components_page_page_component__WEBPACK_IMPORTED_MODULE_11__["PageComponent"], _components_text_text_component__WEBPACK_IMPORTED_MODULE_23__["TextComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_24__["LoginComponent"], _components_clock_clock_component__WEBPACK_IMPORTED_MODULE_25__["ClockComponent"], _components_weather_weather_component__WEBPACK_IMPORTED_MODULE_26__["WeatherComponent"], _components_header_header_component__WEBPACK_IMPORTED_MODULE_27__["HeaderComponent"], _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_28__["FooterComponent"]],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
     })], AppModule);
     /***/
@@ -786,7 +827,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass(ClockComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          this.date = new Date();
+        }
       }]);
 
       return ClockComponent;
@@ -826,6 +869,90 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     "./node_modules/@adobe/aem-angular-editable-components/__ivy_ngcc__/fesm2015/adobe-aem-angular-editable-components.js");
 
     Object(_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_0__["MapTo"])("angularapp/components/spa")(_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_0__["AEMContainerComponent"]);
+    /***/
+  },
+
+  /***/
+  "./src/app/components/footer/footer.component.scss":
+  /*!*********************************************************!*\
+    !*** ./src/app/components/footer/footer.component.scss ***!
+    \*********************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppComponentsFooterFooterComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuc2NzcyJ9 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/components/footer/footer.component.ts":
+  /*!*******************************************************!*\
+    !*** ./src/app/components/footer/footer.component.ts ***!
+    \*******************************************************/
+
+  /*! exports provided: FooterComponent */
+
+  /***/
+  function srcAppComponentsFooterFooterComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "FooterComponent", function () {
+      return FooterComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @adobe/aem-angular-editable-components */
+    "./node_modules/@adobe/aem-angular-editable-components/__ivy_ngcc__/fesm2015/adobe-aem-angular-editable-components.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+    var FooterComponent = /*#__PURE__*/function () {
+      function FooterComponent() {
+        _classCallCheck(this, FooterComponent);
+      }
+
+      _createClass(FooterComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return FooterComponent;
+    }();
+
+    FooterComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+      selector: 'app-footer',
+      template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
+      /*! raw-loader!./footer.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/components/footer/footer.component.html"))["default"],
+      styles: [Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
+      /*! ./footer.component.scss */
+      "./src/app/components/footer/footer.component.scss"))["default"]]
+    })], FooterComponent);
+    Object(_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["MapTo"])("angularapp/components/footer")(FooterComponent);
     /***/
   },
 
@@ -893,11 +1020,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       _createClass(HeaderComponent, [{
-        key: "hasImage",
-        get: function get() {
-          return this.imagePath && this.imagePath.trim().length > 0;
-        }
-      }, {
         key: "ngOnInit",
         value: function ngOnInit() {}
       }]);
@@ -905,7 +1027,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       return HeaderComponent;
     }();
 
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"])()], HeaderComponent.prototype, "imagePath", void 0);
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"])()], HeaderComponent.prototype, "image", void 0);
     HeaderComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
       selector: "app-header",
       template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
