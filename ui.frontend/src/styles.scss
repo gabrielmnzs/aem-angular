@@ -64,9 +64,11 @@ body {
 }
 
 .cmp-custom-header {
-  margin-top: 25px;
+  padding-top: 25px;
   display: flex;
   flex-direction: row;
+  height: 187px;
+  background: #e5e5e5;
 }
 
 .cmp-custom-image {
@@ -99,31 +101,50 @@ body {
 }
 
 // Home page
-core-container-v1.home-container__main {
-  //height: 700px;
+.home-container__main {
+  height: calc(100vh - 287px);
   display: flex;
   flex-direction: row;
+  background: #e5e5e5;
 }
 
 .home-container__image {
   display: flex;
-  //height: 700px;
-  //position: relative;
 
   > div > img {
-    //position: absolute;
+    position: absolute;
     max-width: 500px;
     bottom: 0;
   }
 }
 
+.home-container__left {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+}
+
+.home-container__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 70px;
+  height: 100%;
+}
+
 .home-text-family__poppins {
   font-family: "Poppins";
   font-style: normal;
+  text-align: end;
+
+  > p {
+    margin: 0;
+  }
 }
 
 .home-text-color__red {
-  color: #C12D18;
+  color: #c12d18;
 }
 
 .home-text-color__black {
@@ -131,15 +152,15 @@ core-container-v1.home-container__main {
 }
 
 .home-text-size__small {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .home-text-size__medium {
-  font-size: 36px;
+  font-size: 24px;
 }
 
 .home-text-size__large {
-  font-size: 64px;
+  font-size: 48px;
 }
 
 .home-text-weight__regular {
@@ -163,11 +184,55 @@ core-container-v1.home-container__main {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .cmp-custom-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .home-container__right {
+    display: none;
+  }
+
+  .home-container__left {
+    position: initial;
+    width: 100%;
+  }
+}
+
 @media (max-height: 450px) {
   .cmp-custom-image {
     > div > img {
       display: none;
     }
+  }
+}
+
+@media screen and (max-height: 620px) {
+  .cmp-custom-header {
+    height: 147px;
+  }
+
+  .home-container__image {
+    > div > img {
+      max-width: 400px;
+    }
+  }
+
+  .home-container__main {
+    height: calc(100vh - 147px - 75px);
+  }
+
+  .home-text-size__small {
+    font-size: 14px;
+  }
+
+  .home-text-size__medium {
+    font-size: 18px;
+  }
+
+  .home-text-size__large {
+    font-size: 36px;
   }
 }
 
@@ -194,5 +259,17 @@ core-container-v1.home-container__main {
     > div > img {
       display: none;
     }
+  }
+
+  .home-text-size__small {
+    font-size: 14px;
+  }
+
+  .home-text-size__medium {
+    font-size: 18px;
+  }
+
+  .home-text-size__large {
+    font-size: 36px;
   }
 }

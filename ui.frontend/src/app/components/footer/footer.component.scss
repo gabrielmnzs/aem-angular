@@ -4,6 +4,9 @@
   flex-direction: row;
   background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
   color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 
   .left-container,
   .right-container {
@@ -120,8 +123,12 @@
       .time-session {
         display: none;
       }
-    }
+    }    
+  }
+}
 
-    
+@media screen and (max-height: 620px) {
+  .footer-container {
+    height: 75px;
   }
 }

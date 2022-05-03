@@ -15,14 +15,15 @@ export class ClockComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.subscription = timer(0, 1000)
-      .pipe(
-        map(() => new Date()),
-        share()
-      )
-      .subscribe((time) => {
-        this.date = time;
-      });
+    this.date = new Date();
+    // this.subscription = timer(0, 1000)
+    //   .pipe(
+    //     map(() => new Date()),
+    //     share()
+    //   )
+    //   .subscribe((time) => {
+    //     this.date = time;
+    //   });
   }
 }
 MapTo("angularapp/components/clock")(ClockComponent);

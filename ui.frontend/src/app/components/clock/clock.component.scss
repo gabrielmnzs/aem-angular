@@ -42,3 +42,12 @@
     display: none;
   }
 }
+
+@media screen and (max-height: 620px) {
+  .clock-container {
+    .hour {
+      font-weight: 700;
+      font-size: 80px;
+    }
+  }
+}
