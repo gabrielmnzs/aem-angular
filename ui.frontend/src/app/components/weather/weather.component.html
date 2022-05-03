@@ -1,4 +1,7 @@
 <div class="weather-container">
-  <p class="local">Passo Fundo - RS</p>
-  <p class="temperature">22°</p>
+  <p class="local">{{ location }}</p>
+  <div class="temperature-container">
+    <img class="icon" [src]="icon" alt="">
+    <p class="temperature">{{ temperature }}°</p>
+  </div>  
 </div>
