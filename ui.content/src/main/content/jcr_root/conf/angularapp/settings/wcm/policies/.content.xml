@@ -75,7 +75,7 @@
                     </plugins>
                 </policy_651483963895698>
                 <policy_250958026711200
-                    jcr:lastModified="{Date}2022-04-29T16:44:12.249-03:00"
+                    jcr:lastModified="{Date}2022-05-03T11:23:21.671-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Login"
@@ -133,6 +133,11 @@
                                     cq:styleClasses="cmp-custom-image__logo"
                                     cq:styleId="1651261437800"
                                     cq:styleLabel="Logo"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="home-container__image"
+                                    cq:styleId="1651587779842"
+                                    cq:styleLabel="Home Image"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
@@ -227,6 +232,79 @@
                             features="-"/>
                     </rtePlugins>
                 </policy_641562756958017>
+                <policy_622967887251800
+                    jcr:lastModified="{Date}2022-05-03T14:57:52.257-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Home"
+                    sling:resourceType="wcm/core/components/policy/policy">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Font Family"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="home-text-family__poppins"
+                                    cq:styleId="1651600474397"
+                                    cq:styleLabel="Poppins"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                        <item1
+                            cq:styleGroupLabel="Color"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="home-text-color__red"
+                                    cq:styleId="1651600588078"
+                                    cq:styleLabel="Red"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="home-text-color__black"
+                                    cq:styleId="1651600596586"
+                                    cq:styleLabel="Black"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                        <item2
+                            cq:styleGroupLabel="Size"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="home-text-size__small"
+                                    cq:styleId="1651600616602"
+                                    cq:styleLabel="Small"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="home-text-size__large"
+                                    cq:styleId="1651600626068"
+                                    cq:styleLabel="Large"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item2>
+                        <item3
+                            cq:styleGroupLabel="Weight"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="home-text-weight__regular"
+                                    cq:styleId="1651600644939"
+                                    cq:styleLabel="Regular"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="home-text-weight__bold"
+                                    cq:styleId="1651600654503"
+                                    cq:styleLabel="Bold"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item3>
+                    </cq:styleGroups>
+                </policy_622967887251800>
             </text>
             <title jcr:primaryType="nt:unstructured">
                 <policy_641475696923109
@@ -249,6 +327,78 @@
                     type="h2">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_641528232375303>
+                <policy_623490821859500
+                    jcr:lastModified="{Date}2022-05-03T15:04:22.070-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Home"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowedTypes="[h1,h2,h3,h4,h5,h6]"
+                    linkDisabled="false"
+                    type="h1">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Font Family"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="home-text-family__poppins"
+                                    cq:styleId="1651600989489"
+                                    cq:styleLabel="Poppins"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                        <item1
+                            cq:styleGroupLabel="Color"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="home-text-color__red"
+                                    cq:styleId="1651601010155"
+                                    cq:styleLabel="Red"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="home-text-color__black"
+                                    cq:styleId="1651601022325"
+                                    cq:styleLabel="Black"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                        <item2
+                            cq:styleGroupLabel="Size"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="home-text-size__small"
+                                    cq:styleId="1651601036282"
+                                    cq:styleLabel="Small"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="home-text-size__large"
+                                    cq:styleId="1651601040075"
+                                    cq:styleLabel="Large"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item2>
+                        <item3
+                            cq:styleGroupLabel="Weight"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="home-text-weight__regular"
+                                    cq:styleId="1651601047189"
+                                    cq:styleLabel="Regular"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="home-text-weight__bold"
+                                    cq:styleId="1651601049802"
+                                    cq:styleLabel="Bold"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item3>
+                    </cq:styleGroups>
+                </policy_623490821859500>
             </title>
             <experiencefragment jcr:primaryType="nt:unstructured">
                 <policy_header
@@ -368,7 +518,7 @@
                     </cq:authoring>
                 </policy_1575040440977>
                 <policy_253982258431600
-                    jcr:lastModified="{Date}2022-04-29T17:16:42.597-03:00"
+                    jcr:lastModified="{Date}2022-05-03T09:55:08.604-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Login"
@@ -399,6 +549,11 @@
                                     cq:styleClasses="cmp-custom-container"
                                     cq:styleId="1650484350498"
                                     cq:styleLabel="flex center 100vh"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="home-container__main"
+                                    cq:styleId="1651582479785"
+                                    cq:styleLabel="Home Main"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item1>

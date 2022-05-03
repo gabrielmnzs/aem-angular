@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-05-02T16:43:25.341-03:00"
+        cq:lastModified="{Date}2022-05-03T15:27:23.723-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/angularapp/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
@@ -81,6 +81,53 @@
                         </cq:responsive>
                     </weather>
                 </container>
+                <container_748372456
+                    jcr:created="{Date}2022-05-02T17:23:58.644-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-05-02T17:23:58.644-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="angularapp/components/container">
+                    <image
+                        jcr:created="{Date}2022-05-02T17:24:31.824-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-02T17:24:48.578-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="angularapp/components/image"
+                        displayPopupTitle="true"
+                        fileReference="/content/dam/angularapp/uol-ball-transparent 1.png"
+                        isDecorative="true"
+                        titleValueFromDAM="true">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                    </image>
+                    <container
+                        jcr:created="{Date}2022-05-03T11:53:47.019-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-03T11:53:47.019-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="angularapp/components/container">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="8"/>
+                        </cq:responsive>
+                    </container>
+                </container_748372456>
+                <footer
+                    jcr:created="{Date}2022-05-02T17:31:09.252-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-05-02T17:31:09.252-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="angularapp/components/footer"/>
             </responsivegrid>
         </root>
         <image jcr:primaryType="nt:unstructured">
