@@ -1,0 +1,134 @@
+.footer-container {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  .left-container,
+  .right-container {
+    width: 50%;
+  }
+
+  .left-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 35px;
+    border-right: 1px solid #ffffff;
+
+    > p {
+      width: 500px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: right;
+    }
+  }
+
+  .right-container {
+    display: flex;
+    justify-content: flex-end;
+
+    .time-session {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      &__label {
+        width: 100px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: right;
+      }
+
+      &__timer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 34px;
+        line-height: 1;
+
+        > p {
+          margin: 0;
+        }
+
+        .seconds-number {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .btn-keep-browsing,
+    .btn-logout {
+      width: 131px;
+      border: 0;
+
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+
+      cursor: pointer;
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+
+    .btn-keep-browsing {
+      color: #c13216;
+      background: #ffffff;
+    }
+
+    .btn-logout {
+      color: #ffffff;
+      background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    .left-container {
+      display: none;
+    };
+
+    .right-container {
+      width: 100%;
+      flex-direction: row-reverse;
+
+      .btn-keep-browsing {
+        width: 100%;
+      }
+
+      .time-session {
+        display: none;
+      }
+    }    
+  }
+}
+
+@media screen and (max-height: 620px) {
+  .footer-container {
+    height: 75px;
+  }
+}

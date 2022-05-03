@@ -1,0 +1,20 @@
+<footer class="footer-container">
+  <div class="left-container">
+    <p>
+      Essa janela do navegador é usada para manter sua sessão de autenticação
+      ativa. Deixe-a aberta em segundo plano e abra uma nova janela para
+      continuar a navegar.
+    </p>
+  </div>
+  <div class="right-container">
+    <div class="time-session">
+      <p class="time-session__label">Application refresh in</p>
+      <div class="time-session__timer">
+        <p class="seconds-number">{{ timer }}</p>
+        <p class="seconds-label">seconds</p>
+      </div>
+    </div>
+    <button class="btn-keep-browsing" (click)="keepBrowsing()">Continuar Navegando</button>
+    <button class="btn-logout" (click)="logout()">Logout</button>
+  </div>
+</footer>

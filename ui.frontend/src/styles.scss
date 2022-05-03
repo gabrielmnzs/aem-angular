@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Poppins&family=Space+Mono:wght@400;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/mark-pro");
 
 html,
 body {
@@ -17,7 +18,11 @@ body {
   box-sizing: border-box;
 }
 
-.cmp-container {
+.cmp-custom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   &__header {
     display: flex;
     align-items: center;
@@ -58,6 +63,179 @@ body {
   }
 }
 
+.cmp-custom-header {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  height: 187px;
+  background: #e5e5e5;
+}
+
+.cmp-custom-image {
+  > div > img {
+    background-size: cover;
+  }
+}
+
+.cmp-custom-image__logo {
+  display: flex;
+  justify-content: center;
+
+  > div > img {
+    width: 200px;
+  }
+}
+
+.cmp-custom-image__logo-background {
+  > div > img {
+    max-width: 824px;
+    background-size: cover;
+  }
+}
+
+.cmp-background {
+  &__gray {
+    background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
+    box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
+  }
+}
+
+// Home page
+.home-container__main {
+  height: calc(100vh - 287px);
+  display: flex;
+  flex-direction: row;
+  background: #e5e5e5;
+}
+
+.home-container__image {
+  display: flex;
+
+  > div > img {
+    position: absolute;
+    max-width: 500px;
+    bottom: 0;
+  }
+}
+
+.home-container__left {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+}
+
+.home-container__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 70px;
+  height: 100%;
+}
+
+.home-text-family__poppins {
+  font-family: "Poppins";
+  font-style: normal;
+  text-align: end;
+
+  > p {
+    margin: 0;
+  }
+}
+
+.home-text-color__red {
+  color: #c12d18;
+}
+
+.home-text-color__black {
+  color: #222222;
+}
+
+.home-text-size__small {
+  font-size: 18px;
+}
+
+.home-text-size__medium {
+  font-size: 24px;
+}
+
+.home-text-size__large {
+  font-size: 48px;
+}
+
+.home-text-weight__regular {
+  font-weight: 400;
+}
+
+.home-text-weight__bold {
+  font-weight: 700;
+}
+
+@media (max-height: 1200px) {
+  .cmp-custom-container {
+    height: 100vh;
+  }
+
+  .cmp-custom-image {
+    > div > img {
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cmp-custom-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .home-container__right {
+    display: none;
+  }
+
+  .home-container__left {
+    position: initial;
+    width: 100%;
+  }
+}
+
+@media (max-height: 450px) {
+  .cmp-custom-image {
+    > div > img {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-height: 620px) {
+  .cmp-custom-header {
+    height: 147px;
+  }
+
+  .home-container__image {
+    > div > img {
+      max-width: 400px;
+    }
+  }
+
+  .home-container__main {
+    height: calc(100vh - 147px - 75px);
+  }
+
+  .home-text-size__small {
+    font-size: 14px;
+  }
+
+  .home-text-size__medium {
+    font-size: 18px;
+  }
+
+  .home-text-size__large {
+    font-size: 36px;
+  }
+}
+
 @media (max-width: 390px) {
   .cmp-container__header {
     height: 60px;
@@ -73,5 +251,25 @@ body {
   .cmp-container__main {
     margin-top: 54px;
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cmp-custom-image {
+    > div > img {
+      display: none;
+    }
+  }
+
+  .home-text-size__small {
+    font-size: 14px;
+  }
+
+  .home-text-size__medium {
+    font-size: 18px;
+  }
+
+  .home-text-size__large {
+    font-size: 36px;
   }
 }

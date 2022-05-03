@@ -19,24 +19,22 @@
 package com.angularapp.core.models;
 
 import com.adobe.cq.export.json.ComponentExporter;
+import com.adobe.cq.wcm.core.components.models.Image;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.osgi.annotation.versioning.ConsumerType;
 
 
 /**
- * Defines the {@code Text} Sling Model used for the {@code angularapp/components/text} component.
+ * Defines the {@code Header} Sling Model used for the {@code angularapp/components/header} component.
  * 
  */
 @ConsumerType
-public interface Text
+public interface Header
     extends ComponentExporter
 {
 
 
-    @JsonProperty("text")
-    String getText();
-
-    @JsonProperty("className")
-    String getClassName();
+    @JsonProperty("image")
+    Image getImage();
 
 }

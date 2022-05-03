@@ -20,45 +20,26 @@ package com.angularapp.core.models.impl;
 
 import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;
-import com.angularapp.core.models.Text;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.angularapp.core.models.Weather;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
-import org.apache.sling.models.annotations.injectorspecific.InjectionStrategy;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
-import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 @Model(adaptables = {
     SlingHttpServletRequest.class
 }, adapters = {
-    Text.class,
+    Weather.class,
     ComponentExporter.class
-}, resourceType = "angularapp/components/text")
+}, resourceType = "angularapp/components/weather")
 @Exporter(name = ExporterConstants.SLING_MODEL_EXPORTER_NAME, extensions = ExporterConstants.SLING_MODEL_EXTENSION)
-public class TextImpl
-    implements Text
+public class WeatherImpl
+    implements Weather
 {
 
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String text;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String className;
     @SlingObject
     private Resource resource;
-
-    @Override
-    @JsonProperty("text")
-    public String getText() {
-        return text;
-    }
-
-    @Override
-    @JsonProperty("className")
-    public String getClassName() {
-        return className;
-    }
 
     @Override
     public String getExportedType() {
