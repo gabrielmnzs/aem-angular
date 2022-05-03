@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Poppins&family=Space+Mono:wght@400;700&display=swap");
 @import url("http://fonts.cdnfonts.com/css/mark-pro");
 
 html,
@@ -84,11 +84,70 @@ body {
   }
 }
 
+.cmp-custom-image__logo-background {
+  > div > img {
+    max-width: 824px;
+    background-size: cover;
+  }
+}
+
 .cmp-background {
   &__gray {
     background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
     box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
   }
+}
+
+// Home page
+core-container-v1.home-container__main {
+  //height: 700px;
+  display: flex;
+  flex-direction: row;
+}
+
+.home-container__image {
+  display: flex;
+  //height: 700px;
+  //position: relative;
+
+  > div > img {
+    //position: absolute;
+    max-width: 500px;
+    bottom: 0;
+  }
+}
+
+.home-text-family__poppins {
+  font-family: "Poppins";
+  font-style: normal;
+}
+
+.home-text-color__red {
+  color: #C12D18;
+}
+
+.home-text-color__black {
+  color: #222222;
+}
+
+.home-text-size__small {
+  font-size: 24px;
+}
+
+.home-text-size__medium {
+  font-size: 36px;
+}
+
+.home-text-size__large {
+  font-size: 64px;
+}
+
+.home-text-weight__regular {
+  font-weight: 400;
+}
+
+.home-text-weight__bold {
+  font-weight: 700;
 }
 
 @media (max-height: 1200px) {

@@ -31,6 +31,7 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
+import { MainComponent } from './components/main/main.component';
 
 registerLocaleData(localePt);
 
@@ -68,6 +69,7 @@ registerLocaleData(localePt);
     WeatherComponent,
     HeaderComponent,
     FooterComponent,
+    MainComponent,
   ],
   entryComponents: [
     PageComponent,
@@ -76,7 +78,8 @@ registerLocaleData(localePt);
     ClockComponent,
     WeatherComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MainComponent
   ],
   bootstrap: [AppComponent],
 })
