@@ -1,6 +1,6 @@
 import { MapTo } from "@adobe/aem-angular-editable-components";
 import { Component, OnInit } from "@angular/core";
-import { WeatherService } from 'src/app/services/weather.service';
+import { WeatherService } from "src/app/services/weather.service";
 
 @Component({
   selector: "app-weather",
@@ -19,7 +19,7 @@ export class WeatherComponent implements OnInit {
       this.location = `${data.location.name}, ${data.location.region}`;
       this.temperature = data.current.temp_c;
       this.icon = data.current.condition.icon;
-    })
+    });
   }
 }
 MapTo("angularapp/components/weather")(WeatherComponent);

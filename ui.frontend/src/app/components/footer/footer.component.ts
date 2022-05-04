@@ -11,7 +11,7 @@ import { LocalStorageService } from "src/app/auth/services/local-storage.service
   styleUrls: ["./footer.component.scss"],
 })
 export class FooterComponent implements OnInit {
-  startAt: number = 180;
+  startAt = 180;
   timer: number;
   reset = false;
   subscription: Subscription;
