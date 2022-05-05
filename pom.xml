@@ -288,21 +288,7 @@ Bundle-DocURL:
                                     <cnds>tccl:aem.cnd</cnds>
                                 </options>
                             </jackrabbit-nodetypes>
-                        </validatorsSettings>
-                        <embeddeds>
-                            <embedded>
-                                <groupId>com.adobe.acs</groupId>
-                                <artifactId>acs-aem-commons-ui.apps</artifactId>
-                                <type>zip</type>
-                                <target>/apps/my-app-packages/application/install</target>
-                            </embedded>
-                            <embedded>
-                                <groupId>com.adobe.acs</groupId>
-                                <artifactId>acs-aem-commons-ui.content</artifactId>
-                                <type>zip</type>
-                                <target>/apps/my-app-packages/content/install</target>
-                            </embedded>
-                        </embeddeds>
+                        </validatorsSettings>                        
                     </configuration>
                     <dependencies>
                         <dependency>
@@ -557,22 +543,6 @@ Bundle-DocURL:
                 <groupId>com.adobe.cq</groupId>
                 <artifactId>core.wcm.components.core</artifactId>
                 <version>${core.wcm.components.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.adobe.acs</groupId>
-                <artifactId>acs-aem-commons-ui.content</artifactId>
-                <version>5.3.0</version>
-                <type>zip</type>
-                <classifier>min</classifier>
-            </dependency>
-
-            <dependency>
-                <groupId>com.adobe.acs</groupId>
-                <artifactId>acs-aem-commons-ui.apps</artifactId>
-                <version>5.3.0</version>
-                <type>zip</type>
-                <classifier>min</classifier> 
             </dependency>
 
             <!-- SPA Project Core (includes hierarchy page model) -->
