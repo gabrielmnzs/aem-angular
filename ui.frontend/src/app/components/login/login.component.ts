@@ -1,3 +1,4 @@
+import { faLock, faUser } from '@fortawesome/free-solid-svg-icons';
 import { MapTo } from "@adobe/aem-angular-editable-components";
 import { Component, Input, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, NgForm, Validators } from "@angular/forms";
@@ -16,6 +17,9 @@ export class LoginComponent implements OnInit {
   @Input() userPlaceholder = "User";
   @Input() passwordPlaceholder = "Password";
   @Input() buttonName = "Sign in";
+
+  faUser = faUser;
+  faLock = faLock;
 
   loginForm: FormGroup;
   user: any;

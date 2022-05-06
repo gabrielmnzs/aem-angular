@@ -2,23 +2,33 @@
 <p class="subtitle">{{ subtitle }}</p>
 <form class="form-signin" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
   <h2 class="form-signin__heading">{{ formTitle }}</h2>
-  <input
-    class="form-control form-signin__input"
-    type="text"
-    formControlName="username"
-    [placeholder]="userPlaceholder"
+  <div
+    class="form-signin__input"
     [ngClass]="{ invalid: submitted && username.errors }"
-    required
-    autofocus
-  />
-  <input
-    class="form-control form-signin__input"
-    type="password"
-    formControlName="password"
-    [placeholder]="passwordPlaceholder"
+  >
+    <input
+      class="form-control"
+      type="text"
+      formControlName="username"
+      [placeholder]="userPlaceholder"
+      required
+      autofocus
+    />
+    <fa-icon [icon]="faUser" class="fa-light" size="lg"></fa-icon>
+  </div>
+  <div
+    class="form-signin__input"
     [ngClass]="{ invalid: submitted && password.errors }"
-    required
-  />
+  >
+    <input
+      class="form-control"
+      type="password"
+      formControlName="password"
+      [placeholder]="passwordPlaceholder"
+      required
+    />
+    <fa-icon [icon]="faLock" size="lg"></fa-icon>
+  </div>
   <div class="form-signin__error-message">
     <p
       *ngIf="

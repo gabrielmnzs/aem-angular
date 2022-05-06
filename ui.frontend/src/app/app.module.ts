@@ -32,6 +32,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import { MainComponent } from './components/main/main.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 registerLocaleData(localePt);
 
@@ -54,6 +55,7 @@ registerLocaleData(localePt);
     AemAngularCoreWcmComponentsAccordionV1,
     AemAngularCoreWcmComponentsSeparatorV1,
     AemAngularCoreWcmComponentsLanguageNavigationV1,
+    FontAwesomeModule
   ],
   providers: [
     ModelManagerService,
