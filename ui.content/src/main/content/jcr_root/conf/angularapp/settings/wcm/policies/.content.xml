@@ -632,7 +632,7 @@
                     </cq:authoring>
                 </policy_1575040440977>
                 <policy_253982258431600
-                    jcr:lastModified="{Date}2022-05-03T16:35:14.429-03:00"
+                    jcr:lastModified="{Date}2022-05-06T17:40:58.622-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Login"
@@ -648,9 +648,14 @@
                             jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
                                 <item0
-                                    cq:styleClasses="cmp-background__gray"
+                                    cq:styleClasses="cmp-background__baltic-sea"
                                     cq:styleId="1650481936864"
-                                    cq:styleLabel="Gray"
+                                    cq:styleLabel="Baltic Sea"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-background__gray-90"
+                                    cq:styleId="1651849894630"
+                                    cq:styleLabel="Gray 90"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
@@ -689,7 +694,7 @@
                                 <item0
                                     cq:styleClasses="cmp-custom-header"
                                     cq:styleId="1651263384264"
-                                    cq:styleLabel="Header"
+                                    cq:styleLabel="Custom Header"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item2>
@@ -765,7 +770,7 @@
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <spa-default
                         jcr:description="Includes only SPA-Enabled components."
-                        jcr:lastModified="{Date}2022-04-20T15:50:51.156-03:00"
+                        jcr:lastModified="{Date}2022-05-06T12:23:08.159-03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="SPA Content"
@@ -778,14 +783,45 @@
                                 jcr:primaryType="nt:unstructured">
                                 <cq:styles jcr:primaryType="nt:unstructured">
                                     <item0
-                                        cq:styleClasses="cmp-background__gray"
-                                        cq:styleId="1650480613511"
-                                        cq:styleLabel="Gray"
+                                        cq:styleClasses="cmp-background__gray-90"
+                                        cq:styleId="1651850542055"
+                                        cq:styleLabel="Gray 90"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="cmp-background__baltic-sea"
+                                        cq:styleId="1651850571177"
+                                        cq:styleLabel="Baltic Sea"
                                         jcr:primaryType="nt:unstructured"/>
                                 </cq:styles>
                             </item0>
                         </cq:styleGroups>
                     </spa-default>
+                    <policy_97188914049900
+                        jcr:lastModified="{Date}2022-05-06T12:17:28.421-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Home"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="Background Color"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="cmp-background__gray-90"
+                                        cq:styleId="1651850106084"
+                                        cq:styleLabel="Gray 90"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="cmp-background__baltic-sea"
+                                        cq:styleId="1651850138246"
+                                        cq:styleLabel="Baltic Sea"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_97188914049900>
                 </responsivegrid>
             </components>
         </foundation>

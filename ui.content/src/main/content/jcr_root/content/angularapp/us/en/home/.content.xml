@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-05-05T17:23:27.645-03:00"
+        cq:lastModified="{Date}2022-05-06T12:23:28.169-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/angularapp/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
@@ -15,6 +15,7 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid">
             <responsivegrid
+                cq:styleIds="[1651850542055]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
                 <basic_component
@@ -25,41 +26,20 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="angularapp/components/basic-component"
                     text="ARTURY"/>
-                <container
-                    cq:styleIds="[1651263384264]"
-                    jcr:created="{Date}2022-04-29T16:40:18.647-03:00"
+                <header
+                    jcr:created="{Date}2022-05-06T11:49:20.372-03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-04-29T16:40:18.647-03:00"
+                    jcr:lastModified="{Date}2022-05-06T11:49:42.131-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="angularapp/components/container">
+                    sling:resourceType="angularapp/components/header">
                     <image
-                        cq:styleIds="[1651261437800]"
-                        jcr:created="{Date}2022-05-03T17:12:03.111-03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-03T17:12:18.591-03:00"
+                        jcr:lastModified="{Date}2022-05-06T11:49:42.131-03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="angularapp/components/image"
-                        displayPopupTitle="true"
-                        fileReference="/content/dam/angularapp/compassuol-logo-black.png"
-                        isDecorative="true"
-                        titleValueFromDAM="true"/>
-                    <clock
-                        jcr:created="{Date}2022-05-03T17:12:33.174-03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-03T17:12:33.174-03:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="angularapp/components/clock"/>
-                    <weather
-                        jcr:created="{Date}2022-05-03T17:12:41.605-03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-03T17:12:41.605-03:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="angularapp/components/weather"/>
-                </container>
+                        sling:resourceType="core/wcm/components/image/v2/image"
+                        fileReference="/content/dam/angularapp/compassuol-logo-black.png"/>
+                </header>
                 <container_748372456
                     cq:styleIds="[1651582479785]"
                     jcr:created="{Date}2022-05-02T17:23:58.644-03:00"

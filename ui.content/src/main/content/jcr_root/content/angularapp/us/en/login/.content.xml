@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-04-27T18:15:08.919-03:00"
+        cq:lastModified="{Date}2022-05-06T17:54:22.326-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/angularapp/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
@@ -19,7 +19,7 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
                 <container
-                    cq:styleIds="[1650481936864,1650484350498]"
+                    cq:styleIds="[1650484350498,1650481936864]"
                     jcr:created="{Date}2022-04-20T18:35:48.514-03:00"
                     jcr:createdBy="admin"
                     jcr:lastModified="{Date}2022-04-20T18:35:48.514-03:00"
@@ -88,6 +88,18 @@
                             width="6"/>
                     </cq:responsive>
                 </image>
+                <image_1342749092
+                    cq:styleIds="[1651261437800]"
+                    jcr:created="{Date}2022-05-06T17:54:04.557-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-05-06T17:54:18.258-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="angularapp/components/image"
+                    displayPopupTitle="true"
+                    fileReference="/content/dam/angularapp/compassuol-logo-white 1.png"
+                    isDecorative="true"
+                    titleValueFromDAM="true"/>
             </responsivegrid>
         </root>
     </jcr:content>

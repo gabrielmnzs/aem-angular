@@ -63,6 +63,16 @@ body {
   }
 }
 
+.cmp-custom-header {
+  position: absolute;
+  top: 0;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border: 1px solid blue;
+}
+
 .cmp-custom-image {
   > div > img {
     background-size: cover;
@@ -70,11 +80,17 @@ body {
 }
 
 .cmp-custom-image__logo {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
 
   > div > img {
     width: 200px;
+    margin-right: 220px;
   }
 }
 
@@ -180,9 +196,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .cmp-custom-header {
-    padding-left: 20px;
-    padding-right: 20px;
+  .cmp-custom-image__logo {    
+    justify-content: center;
+
+    > div > img {
+      margin-right: 0;
+    }
   }
 
   .home-container__right {
@@ -204,10 +223,6 @@ body {
 }
 
 @media screen and (max-height: 620px) {
-  .cmp-custom-header {
-    height: 147px;
-  }
-
   .home-container__image {
     > div > img {
       max-width: 400px;
